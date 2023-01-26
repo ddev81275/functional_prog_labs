@@ -1,6 +1,8 @@
-###2. Установить Visual Studio Code 
-[ https://code.visualstudio.com/]( https://code.visualstudio.com/) 
-###3. На Python написать простую программу и загрузить в GidHub.
+### 2. Установить Visual Studio Code 
+[https://code.visualstudio.com/]( https://code.visualstudio.com/) 
+
+
+### 3. На Python написать простую программу и загрузить в GidHub.
 ###Что должна включать программа:
 * -ФИО студента и любая дополнительная информация про студента 
 * -использовать функцию print() 
