@@ -30,12 +30,36 @@ def _random_():
     _random = random.random()
     _list = ["abc", 34, True, 40, "male"]
 
-
     print(list(enumerate(_list)))
     print(f"randint(0, 9) => {_randint}")
     print(f"random.randrange({10}) => {_randrange}")
     print(f"random.random() => {_random}")
 
+# 4) Решите следующие задачи:
+# 1. Даны два целых числа A и B (при этом A ≤ B). Выведите все числа от A до B включительно.
+def from_a_2_b(_from, _to):
+    if (_from <= _to):
+        for item in range(_from, _to + 1):
+            print(item, end=" ")
+        print()
+    else:
+        print("not true condition A ≤ B")
+
+# 2. Даны два целых числа A и В. 
+# Выведите все числа от A до B включительно, в порядке возрастания, 
+# если A < B, или в порядке убывания в противном случае.
+def ascending_descending(_from, _to):
+    if (_from <= _to):
+        for item in range(_from, _to + 1):
+            print(item)
+        print()
+# write loop for descending
+
+
 # months_between_current_and_last()
 # create_int_list()
-_random_()
+# _random_()
+# from_a_2_b(10, 15)
+# from_a_2_b(15, 10)
+# ascending_descending(10, 15)
+# ascending_descending(15, 10)
