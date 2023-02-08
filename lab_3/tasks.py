@@ -6,7 +6,7 @@ import random
 # 1) Написать программу используя цикл for и while.
 def months_between_current_and_last():
     current_month = date.today().month  # Feb
-    print("current month is : "+calendar.month_name[current_month])
+    print("current month is : " + calendar.month_name[current_month])
 
     print(f"from {calendar.month_name[current_month]} to December will be")
     month_from = current_month + 1
@@ -22,6 +22,7 @@ def create_int_list():
     for item in ints:
         print(item, end=" ")
 
+
 # 3) Используйте функции randint() randrange() random() enumerate()
 # в своей программе
 def _random_():
@@ -35,21 +36,23 @@ def _random_():
     print(f"random.randrange({10}) => {_randrange}")
     print(f"random.random() => {_random}")
 
+
 # 4) Решите следующие задачи:
 # 1. Даны два целых числа A и B (при этом A ≤ B). Выведите все числа от A до B включительно.
 def from_a_2_b(_from, _to):
-    if (_from <= _to):
+    if _from <= _to:
         for item in range(_from, _to + 1):
             print(item, end=" ")
         print()
     else:
         print("not true condition A ≤ B")
 
-# 2. Даны два целых числа A и В. 
+
+# 2. Даны два целых числа A и В.
 # Выведите все числа от A до B включительно, в порядке возрастания, 
 # если A < B, или в порядке убывания в противном случае.
 def ascending_descending(_from, _to):
-    if (_from <= _to):
+    if _from <= _to:
         for item in range(_from, _to + 1):
             print(item)
         print()
