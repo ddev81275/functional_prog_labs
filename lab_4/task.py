@@ -40,9 +40,32 @@ def count_method(input: str):
     print(f"count of `{substring}` equal {value}, len of `{input}` is {len(input)}")
 
 
+def split_method(input: str):
+    splitted = input.split(sep=" ", maxsplit=-1)
+    print(splitted)
+
+
+def swapcase_method(input: str):
+    output = input.swapcase()
+    print(output)
+
+
+def title_method(input: str):
+    value = input.title()
+    print(value)
+
+
+def replace_method(input: str, old: str, value: str):
+    replaced = input.replace(old, value)
+    print(replaced)
+
 # index_method()
 # format_method()
 # find_method()
 # join_method()
 # capitalize_method("if he cleaned the entire beach, more plastic would cover it the next day after the tide had come in. ")
 # count_method("hello from python, hello")
+# split_method("Lose away off why half led have near bed")
+# swapcase_method("Lose away off why half led have near bed")
+# title_method("Lose, away off why half led have near bed")
+# replace_method("Dare as name just when with it body.", old="name", value="Deku")
