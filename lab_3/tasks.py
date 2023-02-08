@@ -61,7 +61,13 @@ def ascending_descending(_from, _to):
         for item in _list:
             print(item, end=" ")
         print("descending")
-# write loop for descending
+
+
+# 3. Даны два целых числа A и В, A>B. Выведите все нечётные числа от A до B включительно, в порядке убывания. В этой задаче можно обойтись без инструкции if.
+def _without_if(_from, _to):
+    _list = list(range(_from, _to + 1))
+    for item in _list:
+        print(item % 2 == 1 and item or "", end=" ")
 
 
 # months_between_current_and_last()
@@ -69,5 +75,6 @@ def ascending_descending(_from, _to):
 # _random_()
 # from_a_2_b(10, 15)
 # from_a_2_b(15, 10)
-ascending_descending(10, 15)
-ascending_descending(15, 10)
+# ascending_descending(10, 15)
+# ascending_descending(15, 10)
+# _without_if(10, 15)
