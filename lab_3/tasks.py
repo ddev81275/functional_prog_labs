@@ -53,9 +53,14 @@ def from_a_2_b(_from, _to):
 # если A < B, или в порядке убывания в противном случае.
 def ascending_descending(_from, _to):
     if _from <= _to:
-        for item in range(_from, _to + 1):
-            print(item)
-        print()
+        for item in range(_from, _to + 1, 1):
+            print(item, end=" ")
+        print("ascending")
+    else:
+        _list = range(_from, _to - 1, -1)
+        for item in _list:
+            print(item, end=" ")
+        print("descending")
 # write loop for descending
 
 
@@ -64,5 +69,5 @@ def ascending_descending(_from, _to):
 # _random_()
 # from_a_2_b(10, 15)
 # from_a_2_b(15, 10)
-# ascending_descending(10, 15)
-# ascending_descending(15, 10)
+ascending_descending(10, 15)
+ascending_descending(15, 10)
