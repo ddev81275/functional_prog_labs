@@ -1,14 +1,5 @@
 # 1.	Напишите программу, используя 10 функции и методы, связанные со строками
-# 19Hvu5ANdm
-# JWKhvwtL6I
-# kOmThMTuZD
-# Snrq4iwXoc
-# y2ZUp5ys2z
-# IcJDqp96uy
-# Cz86JMlj09
-# u5CnolwILz
-# RJvxncyvhM
-# JIlFWNh46C
+
 def index_method():
     value = "JWKhvwtL6I, 19Hvu5ANdm"
     index = value.index("K")
@@ -28,6 +19,30 @@ def find_method():
     print(output)
 
 
-index_method()
-format_method()
-find_method()
+# separator
+def join_method():
+    separator = ".."
+    output = separator.join("am")
+    joined = separator.join(["Hello", "my", "dear", "friend"])
+    print(f"{output} {joined} ", end=" ")
+
+
+def capitalize_method(input: str):
+    output = input.capitalize()
+    print(output)
+
+
+def count_method(input: str):
+    # substring = "o"
+    substring = ""
+    # value = input.count(substring)
+    value = input.count(substring)
+    print(f"count of `{substring}` equal {value}, len of `{input}` is {len(input)}")
+
+
+# index_method()
+# format_method()
+# find_method()
+# join_method()
+# capitalize_method("if he cleaned the entire beach, more plastic would cover it the next day after the tide had come in. ")
+# count_method("hello from python, hello")
