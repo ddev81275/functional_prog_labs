@@ -1,8 +1,9 @@
-class Person : 
+class Person:
     name = "Almas"
     second_name = "Mendybayev"
-    age = 23
-    # age = 22
+    # age = 23
+    age = 22
+
 
 student = Person
 print(student.name)

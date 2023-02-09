@@ -12,6 +12,4 @@ while(it < 2):
     if value.isdigit():
         sum += int(value)
         it += 1
-    else:
-        continue
 print(f"summa of 2 values = {sum}")
