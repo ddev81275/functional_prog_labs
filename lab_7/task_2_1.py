@@ -35,20 +35,33 @@ def _check_river_name_on_existing(rivers_dict: dict, river_name: str):
                 print("ok")
 
 
+def check_key_on_existing(_dict: dict, _key: str):
+    keys = _dict.keys()
+    for item in keys:
+        if item == _key:
+            return True
+    return False
+
 def _add_key_value_to_dict_and_print_updated(_key: str, _value: str, _dict: dict):
     values = _dict.values()
-    # _dict[_key] = _value
-    for item in values:
-        for name in item:
-            print(name)
-    print(_dict)
+    isExist = check_key_on_existing(_dict, _key)
+    if isExist == False:
+        _dict[_key] = _value
+    else:
+        _list = _dict.get(_key)
+        oldValues = list(_list)
+        newValues = oldValues.copy()
+        newValues.append(_value)
+        _dict.update([(_key, newValues)])
+
+    keys = _dict.keys()
+    for item in _dict.values():
+        print(item)
+
+_check_river_name_on_existing(county_rivers_dictionary, "Ile")
+
+_create_river_country_list(rivers, county_rivers_dictionary, rivers_and_country)
+for item in rivers_and_country:
+    print(item)
 
 _add_key_value_to_dict_and_print_updated("USA", "River", county_rivers_dictionary)
-
-
-
-# _check_river_name_on_existing(county_rivers_dictionary, "Ile")
-
-# _create_river_country_list(rivers, county_rivers_dictionary, rivers_and_country)
-# for item in rivers_and_country:
-    # print(item)
