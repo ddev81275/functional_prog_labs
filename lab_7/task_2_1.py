@@ -26,7 +26,14 @@ def _create_river_country_list(rivers: list, county_rivers_dist: dict, rivers_an
             if river_location.__contains__(river_name):
                 rivers_and_counry.append([river_name, i])
 
-
+def _check_river_name_on_existing(rivers_dict: dict, river_name: str):
+    rivers = rivers_dict.values()
+    for item in rivers:
+        for name in item:
+            if name == river_name:
+                print("ok")
 _create_river_country_list(rivers, county_rivers_dictionary, rivers_and_country)
-for item in rivers_and_country:
-    print(item)
+# for item in rivers_and_country:
+#     print(item)
+
+_check_river_name_on_existing(county_rivers_dictionary, "Ile")
